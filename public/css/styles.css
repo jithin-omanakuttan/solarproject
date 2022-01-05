@@ -1,0 +1,268 @@
+html 
+  {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  li,p,a 
+  {
+    font-size: 1.6rem;
+  }
+  h1 
+  {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #525252;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    padding-left: 1rem;
+    font-size: 1.9rem;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #fd5c63;
+  }
+  .about-section .container
+  {
+    margin-top: 300px;
+    padding: 5%;
+  }
+                        /* paralax styling */
+  .services-section,
+  .future-section
+  {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-color: #333;
+    overflow: hidden;
+    z-index: -1;
+  }
+  .bg-img-service
+  {
+    position: absolute;
+    width: 100%;
+    height: 250%;
+    background-image: url("/images/sec3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  .services-section .content,
+  .future-section .content
+  {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+height: 75vh;
+z-index: 100;
+    
+  }
+                              /* end parallax styling */
+  .blog-row
+  {
+    padding-top: 2rem;
+    
+  }
+  .blog-body
+  {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .client-section
+  {
+    margin: 5%;
+  }
+  .bg-img-future
+  {
+    position: absolute;
+    width: 100%;
+    height: 250%;
+    background-image: url("/images/sec2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  .footer-s
+  {
+    background-color: rgba(0, 0, 0, 0.835);
+    color: white;
+  }
+  .adj
+  {
+    margin-top: 40px;
+  }
+  .prod,
+  .touch
+  {
+    padding: 3%;
+  }
+  .list-group-item
+  {
+    background: transparent;
+    border: transparent;
+  }
+  .about-style .main-heading
+  {
+    
+      font-size: 5rem;
+      color: #fd5c63;
+      letter-spacing: 1px;
+      font-weight: bold;
+      padding: 3%;
+      
+
+    
+  }
+            /* CONTACT SECTION */
+
+            .contact-banner {
+              background-image: linear-gradient(
+                to right,
+                rgb(0, 114, 66) 0%,
+                rgb(4, 109, 91) 100%
+              );
+              color: white;
+              padding: 2rem;
+            }
+            
+            .invalid {
+              border: 1px solid red;
+            }
+            
+            .mb-2 {
+              margin-bottom: 20px;
+            }
+            
+            .mb-4 {
+              margin-bottom: 40px;
+            }
+            
+            p {
+              font-size: 20px;
+            }
+            
+            .contact-description {
+              margin-bottom: 40px;
+            }
+            
+            input
+             {
+              padding: 10px;
+              border-radius: 5px;
+              width: 260px;
+              border: 1px solid rgb(0, 114, 66);
+              font-size: 18px;
+              outline: none;
+              color: #333;
+            }
+            
+            .form-control {
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+            
+            .error {
+              color: red;
+              font-size: 14px;
+              margin-top: 6px;
+            }
+            
+            label {
+              display: block;
+              font-size: 20px;
+              margin-bottom: 10px;
+            }
+            
+            .hide {
+              opacity: 0;
+            }
+            
+            textarea {
+              
+                width: 100%;
+              border-radius: 5px;
+              outline: none;
+              padding: 10px;
+              height: 200px;
+              font-size: 18px;
+            }
+            
+            button {
+              color: black;
+              padding: 20px;
+              border: 1px solid rgb(0, 114, 66);
+              border-radius: 10px;
+              background: none;
+              cursor: pointer;
+              transition: all 0.5s;
+              color: rgb(0, 114, 66);
+            }
+            
+            button:hover {
+              background-image: linear-gradient(
+                to right,
+                rgb(0, 114, 66) 0%,
+                rgb(4, 109, 91) 100%
+              );
+              color: white;
+            }
+            
+            form {
+              padding: 2.5rem;
+            }
+            
+            hr {
+              margin-bottom: 20px;
+              margin-top: 20px;
+              height: 1px;
+              border: none;
+              background-color: rgb(0, 114, 66);
+            }
+                        /* end contact-section */
+  
+  
+                        /* media queries part starts here  */
+
+@media all and (max-width: 768px) {
+  .adj
+   {
+     margin-top: 0px;
+   } 
+
+  } 
+  @media all and (max-width: 568px) {
+    .prod,
+    .touch
+    {
+      padding: 0%;
+    }
+  }
+  @media all and (max-width:1024px)
+  {
+    .about-section .container
+    {
+      margin-top: 250px;
+      
+    }
+  }
+  @media all and (max-width:320px)
+  {
+    input
+    {
+      width: 250px;
+      
+    }
+  }

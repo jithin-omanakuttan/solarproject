@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+
+<div class="para">
+    <%- include('partials/navbar'); -%>
+    <style>
+.para {
+  /* The image used */
+  background-image: url("images/blog.jpg");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+
+</div>
+<div class="container about-style">
+    <div class="row main-heading">
+     <h1 class="p8 m5 text-center">Solar Blog and Information</h1>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row blog-row">
+        <%  posts.forEach(function(post){ %>
+        <div class="col-md-4 blog-body">
+            <h3><%=post.title%></h3>
+            <div class="content-div">
+              <p><%=post.content.substring(0, 100) + " ..."%></p>
+            </div>
+            <p style="font-weight: bold;"><%=post.date%></p>
+            <a href="/blogs/<%=post._id%>">Read More</a>
+        </div>
+        <% }) %>
+    </div>
+</div>
+<div class="flex-row-reverse p-2 text-center">
+    <a href="/compose"><i class="fas fa-blog"></i></a>
+</div>
+<%- include('partials/footer'); -%>

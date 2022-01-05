@@ -1,0 +1,57 @@
+<%- include('partials/header'); -%>
+
+
+
+    <body>
+      
+      <div class="contact-banner container-fluid">
+         <%- include('partials/navbar'); -%>
+        <h1>Contact Us</h1>
+    
+        <p class="contact-description">
+          We'd really love to hear from you! Please fill in the form below and
+          submit
+        </p>
+      </div>
+  
+      <form action="/contact" method="post" name="contact-form">
+        <div class="form-control">
+          <label>Full Name</label>
+          <input name="name"
+            placeholder="First and Last Name" />
+          <div class="error hide">Name is required</div>
+        </div>
+  
+        <div class="form-control">
+          <label>Email</label>
+          <input
+            name="contactEmail"
+            placeholder="e.g. your_email@example.com"
+          />
+          <div class="error hide">Email is invalid</div>
+        </div>
+  
+        <div class="form-control">
+          <label>Phone</label>
+          <input name="contactPhone"
+          ></input>
+          <div class="error hide">Phone is invalid</div>
+        </div>
+  
+        <div class="form-control">
+          <label>Message</label>
+          <div class="container-fluid">
+            <textarea name="comment"></textarea>
+          </div>
+          
+          <div class="error hide">Message is required</div>
+        </div>
+  
+        <hr />
+  
+        <button type="submit" id="buttonId">SUBMIT FORM</button>
+      </form>
+      <script type="text/javascript" src="/javaScript/val.js"></script>
+     
+    
+    <%- include('partials/footer'); -%>
